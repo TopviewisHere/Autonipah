@@ -1,20 +1,25 @@
+--GUI Made by TopView
+
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local BecomeFumo = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
-local InfiniteYield = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
+local InfiniteYield = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local TextButton = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
 local UICorner_4 = Instance.new("UICorner")
-local TextButton_2 = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local OPFinality = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local CloseOpen = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
 
@@ -22,82 +27,100 @@ ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
-Frame.Position = UDim2.new(0.0065420568, 0, 0.665185153, 0)
-Frame.Size = UDim2.new(0, 238, 0, 219)
-Frame.Active = true
-Frame.Draggable = true
+BecomeFumo.Name = "BecomeFumo"
+BecomeFumo.Parent = ScreenGui
+BecomeFumo.BackgroundColor3 = Color3.fromRGB(23, 25, 26)
+BecomeFumo.Position = UDim2.new(0.024533866, 0, 0.638518572, 0)
+BecomeFumo.Size = UDim2.new(0, 440, 0, 227)
+BecomeFumo.Active = true
+BecomeFumo.Draggable = true
 
-TextLabel.Parent = Frame
-TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.0462184884, 0, 0.0319634713, 0)
-TextLabel.Size = UDim2.new(0, 215, 0, 50)
+TextLabel.Parent = BecomeFumo
+TextLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TextLabel.Position = UDim2.new(0.184090912, 0, -0.0484581515, 0)
+TextLabel.Size = UDim2.new(0, 277, 0, 49)
 TextLabel.Font = Enum.Font.FredokaOne
 TextLabel.Text = "Become Fumo"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 30.000
-TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+TextLabel.TextSize = 29.000
 
-UICorner.CornerRadius = UDim.new(0, 11)
 UICorner.Parent = TextLabel
 
 TextLabel_2.Parent = TextLabel
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.218604654, 0, 0.540000021, 0)
-TextLabel_2.Size = UDim2.new(0, 120, 0, 23)
+TextLabel_2.Position = UDim2.new(0.176895306, 0, 0.489795923, 0)
+TextLabel_2.Size = UDim2.new(0, 179, 0, 33)
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Made by TapView#0001"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 14.000
 
+UICorner_2.Parent = BecomeFumo
+
 InfiniteYield.Name = "Infinite Yield"
-InfiniteYield.Parent = Frame
-InfiniteYield.BackgroundColor3 = Color3.fromRGB(212, 212, 212)
-InfiniteYield.Position = UDim2.new(0.0798319355, 0, 0.301369846, 0)
-InfiniteYield.Size = UDim2.new(0, 199, 0, 30)
-InfiniteYield.Modal = true
+InfiniteYield.Parent = BecomeFumo
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.Position = UDim2.new(0.0545454547, 0, 0.202643171, 0)
+InfiniteYield.Size = UDim2.new(0, 182, 0, 45)
 InfiniteYield.Font = Enum.Font.FredokaOne
 InfiniteYield.Text = "Infinite Yield"
 InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
-InfiniteYield.TextSize = 14.000
-InfiniteYield.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
-end)
+InfiniteYield.TextSize = 20.000
 
-UICorner_2.CornerRadius = UDim.new(0, 9)
-UICorner_2.Parent = InfiniteYield
+UICorner_3.Parent = InfiniteYield
 
-UICorner_3.Parent = Frame
+ScrollingFrame.Parent = BecomeFumo
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(231, 231, 231)
+ScrollingFrame.Position = UDim2.new(0.0531983227, 0, 0.469603539, 0)
+ScrollingFrame.Size = UDim2.new(0, 335, 0, 100)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0.75, 0)
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(212, 212, 212)
-TextButton.Position = UDim2.new(0.0798319355, 0, 0.525114119, 0)
-TextButton.Size = UDim2.new(0, 199, 0, 30)
-TextButton.Font = Enum.Font.FredokaOne
-TextButton.Text = "OP-Finality"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
-TextButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/bk5J4cyc'),true))()
-end)
+UICorner_4.Parent = ScrollingFrame
 
-UICorner_4.CornerRadius = UDim.new(0, 9)
-UICorner_4.Parent = TextButton
+ImageLabel.Parent = ScrollingFrame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(-0.0267943889, 0, -0.0788488761, 0)
+ImageLabel.Size = UDim2.new(0, 322, 0, 187)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=7152898296"
 
-TextButton_2.Parent = Frame
-TextButton_2.BackgroundColor3 = Color3.fromRGB(212, 212, 212)
-TextButton_2.Position = UDim2.new(0.0798319355, 0, 0.767123282, 0)
-TextButton_2.Size = UDim2.new(0, 199, 0, 30)
-TextButton_2.Font = Enum.Font.FredokaOne
-TextButton_2.Text = "Auto Nipah (Cant Be Turned Off)"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextSize = 14.000
-TextButton_2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/TopviewisHere/BecomeFumoGUIHub/main/AutoNipahScript'),true))()
-end)
+OPFinality.Name = "OP Finality"
+OPFinality.Parent = BecomeFumo
+OPFinality.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OPFinality.Position = UDim2.new(0.49545452, 0, 0.202643171, 0)
+OPFinality.Size = UDim2.new(0, 140, 0, 45)
+OPFinality.Font = Enum.Font.FredokaOne
+OPFinality.Text = "OP Finality"
+OPFinality.TextColor3 = Color3.fromRGB(0, 0, 0)
+OPFinality.TextSize = 20.000
 
-UICorner_5.CornerRadius = UDim.new(0, 9)
-UICorner_5.Parent = TextButton_2
+UICorner_5.Parent = OPFinality
+
+CloseOpen.Name = "CloseOpen"
+CloseOpen.Parent = ScreenGui
+CloseOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.Position = UDim2.new(-0.00072931312, 0, 0.602858543, 0)
+CloseOpen.Size = UDim2.new(0, 107, 0, 40)
+CloseOpen.Font = Enum.Font.FredokaOne
+CloseOpen.Text = "Close/Open"
+CloseOpen.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseOpen.TextSize = 14.000
+
+UICorner_6.Parent = CloseOpen
+
+-- Scripts:
+
+local function CWOR_fake_script() -- CloseOpen.LocalScript 
+	local script = Instance.new('LocalScript', CloseOpen)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Parent.BecomeFumo.Visible == false then
+			script.Parent.Parent.BecomeFumo.Visible = true
+		else
+			script.Parent.Parent.BecomeFumo.Visible = false
+		end
+	end)
+end
+coroutine.wrap(CWOR_fake_script)()
