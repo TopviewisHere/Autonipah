@@ -1,0 +1,103 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local InfiniteYield = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+Frame.Position = UDim2.new(0.0065420568, 0, 0.665185153, 0)
+Frame.Size = UDim2.new(0, 238, 0, 219)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0462184884, 0, 0.0319634713, 0)
+TextLabel.Size = UDim2.new(0, 215, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Become Fumo"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 30.000
+TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner.CornerRadius = UDim.new(0, 11)
+UICorner.Parent = TextLabel
+
+TextLabel_2.Parent = TextLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.218604654, 0, 0.540000021, 0)
+TextLabel_2.Size = UDim2.new(0, 120, 0, 23)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Made by TapView#0001"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = Frame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(212, 212, 212)
+InfiniteYield.Position = UDim2.new(0.0798319355, 0, 0.301369846, 0)
+InfiniteYield.Size = UDim2.new(0, 199, 0, 30)
+InfiniteYield.Modal = true
+InfiniteYield.Font = Enum.Font.FredokaOne
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextSize = 14.000
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = InfiniteYield
+
+UICorner_3.Parent = Frame
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(212, 212, 212)
+TextButton.Position = UDim2.new(0.0798319355, 0, 0.525114119, 0)
+TextButton.Size = UDim2.new(0, 199, 0, 30)
+TextButton.Font = Enum.Font.FredokaOne
+TextButton.Text = "Energize FE Animations"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/0MLPL32f'),true))()
+end)
+
+UICorner_4.CornerRadius = UDim.new(0, 9)
+UICorner_4.Parent = TextButton
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(212, 212, 212)
+TextButton_2.Position = UDim2.new(0.0798319355, 0, 0.767123282, 0)
+TextButton_2.Size = UDim2.new(0, 199, 0, 30)
+TextButton_2.Font = Enum.Font.FredokaOne
+TextButton_2.Text = "Auto Nipah (Cant Be Turned Off)"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/TopviewisHere/BecomeFumoGUIHub/main/AutoNipahScript'),true))()
+end)
+
+UICorner_5.CornerRadius = UDim.new(0, 9)
+UICorner_5.Parent = TextButton_2
