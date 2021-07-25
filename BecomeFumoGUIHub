@@ -99,7 +99,7 @@ OPFinality.Text = "OP Finality"
 OPFinality.TextColor3 = Color3.fromRGB(0, 0, 0)
 OPFinality.TextSize = 20.000
 OPFinality.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/0MLPL32f'),true))()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/bk5J4cyc'),true))()
 end)
 
 UICorner_5.Parent = OPFinality
