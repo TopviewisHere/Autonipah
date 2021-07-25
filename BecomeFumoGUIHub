@@ -77,11 +77,11 @@ TextButton.BackgroundColor3 = Color3.fromRGB(212, 212, 212)
 TextButton.Position = UDim2.new(0.0798319355, 0, 0.525114119, 0)
 TextButton.Size = UDim2.new(0, 199, 0, 30)
 TextButton.Font = Enum.Font.FredokaOne
-TextButton.Text = "Energize FE Animations"
+TextButton.Text = "OP-Finality"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 TextButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/0MLPL32f'),true))()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/bk5J4cyc'),true))()
 end)
 
 UICorner_4.CornerRadius = UDim.new(0, 9)
