@@ -67,6 +67,9 @@ InfiniteYield.Font = Enum.Font.FredokaOne
 InfiniteYield.Text = "Infinite Yield"
 InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
 InfiniteYield.TextSize = 20.000
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
 
 UICorner_3.Parent = InfiniteYield
 
@@ -95,6 +98,9 @@ OPFinality.Font = Enum.Font.FredokaOne
 OPFinality.Text = "OP Finality"
 OPFinality.TextColor3 = Color3.fromRGB(0, 0, 0)
 OPFinality.TextSize = 20.000
+OPFinality.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/0MLPL32f'),true))()
+end)
 
 UICorner_5.Parent = OPFinality
 
